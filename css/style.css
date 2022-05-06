@@ -1,0 +1,338 @@
+/* &display=swap&subset=cyrillic-ext */
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+/* Отступы */
+/* По другому работают для строчного объекта*/
+
+/* Внутренние */
+/*
+padding
+Внутренний отступ элемента
+При указании поля в процентах, значение считается 
+от ширины родителя элемента.
+Свойство не наследуется.
+
+padding: со_всех_сторон;
+padding: сверху справа снизу слева;
+padding: сверху_снизу справа_слева;
+padding: сверху справа_слева снизу;
+
+*/
+
+/* Внешние */
+/*
+margin
+Внешний отступ элемента
+При указании поля в процентах, значение 
+считается от ширины родителя элемента.
+Свойство не наследуется.
+Значение может быть как положительным, 
+так и отрицательным числом.
+
+margin: со_всех_сторон;
+margin: сверху справа снизу слева;
+margin: сверху_снизу справа_слева;
+margin: сверху справа_слева снизу;
+*/
+
+/*
+.block_2 {
+	background-color: #77608d;
+
+	color: #fff;
+	font-size: 50px;
+	padding: 50px;
+}
+.block_3 {
+	background-color: #794f45;
+	padding: 50px;
+
+	color: #fff;
+	font-size: 50px;
+	padding: 50px;
+}
+*/
+/* НЕ работают для строчного объекта*/
+/*
+width
+Устанавливает ширину блочных тегов и блочно-строчных
+Свойство не наследуется.
+width:100px;
+width:10%;
+*/
+
+
+	/* width: 500px; */
+
+
+/*
+box-sizing
+Применяется для изменения алгоритма расчета ширины 
+и высоты элемента. 
+Свойство наследуется.
+content-box - Основывается на стандартах CSS, при этом 
+свойства width и height задают ширину и высоту контента
+ и не включают в себя значения отступов, полей и границ.
+border-box - Свойства width и height включают в себя 
+значения полей и границ, но не отступов (margin). Эта модель используется браузером Internet Exporer в режиме несовместимости.
+padding-box - Свойства width и height включают в себя
+ значения полей, но не отступов (margin) и границ (border). 
+
+*/
+
+/*
+ Центрирование объекта с помощью  margin со значениями auto:last-child
+ 1) Объект должен быть блочным
+ 2) Объект должен быть ограничен по ширине, быть уже чем родитель
+ 3) margin: 0px auto;
+*/
+
+
+	/* margin: 0px auto; */
+
+
+/*
+max-width
+Устанавливает максимальную ширину блочных 
+и блочно-строчных тегов
+
+min-width
+Устанавливает минимальную ширину блочных 
+и блочно-строчных тегов
+*/
+
+
+	/*
+	max-width: 700px;
+	margin: 0px auto;
+	*/
+
+/*
+height:
+Устанавливает высоту блочных и блочно-строчных тегов
+Свойство не наследуется.
+height:100px;
+height:10%;
+
+min-height
+Свойство не наследуется.
+
+max-height
+Свойство не наследуется.
+*/
+
+
+	/* height: 500px; */
+
+
+/*
+overflow 
+Управляет отображением содержания блочного элемента
+visible - Отображается все содержание элемента, даже за пределами установленной высоты и ширины. 
+hidden - Отображается только область внутри элемента, остальное будет скрыто.
+scroll - Всегда добавляются полосы прокрутки.
+auto - Полосы прокрутки добавляются только при необходимости.
+*/
+
+
+	/* overflow: hidden; */
+
+/*
+display:
+Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+Свойство не наследуется.
+
+block - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>, заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого. 											
+inline - Элемент отображается как встроенный. Использование блочных тегов, таких как <div> и <p>, автоматически создает перенос и показывает содержимое этих тегов с новой строки. Значение inline отменяет эту особенность, поэтому содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. 											
+inline - block - Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега <img>). При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный. 											
+none - Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. 
+*/
+
+/* Отступ с каждой стороны одним значением */
+.text-1 {
+	font-size: 30px;
+	background-color: rgb(122, 59, 180);
+	padding: 100px;
+	margin: 0px;
+	text-align: center;
+}
+/* Отступ с каждой стороны с разными значениями */
+.text-2 {
+
+	font-size: 30px;
+	background-color: rgb(191, 99, 69);
+	padding: 30px 50px 50px 80px;
+	margin: -50px 70px 30px 80px;
+	text-align: center;
+}
+/* Отступ вверх + вниз, влево + вправо */
+.text-3 {
+	font-size: 30px;
+	background-color: rgb(80, 80, 206);
+	padding: 50px 100px;
+	margin: 100px 50px;
+	text-align: center;
+}
+/* Отступ вверх, вправо+влево, вниз */
+.text-4 {
+	font-size: 30px;
+	background-color: rgb(122, 180, 64);
+	padding: 20px 100px 50px;
+	margin: 40px 80px 20px;
+	text-align: center;
+}
+/* Отступ с одной стороны. С удобством записи и возможностью изменить остальные отступы
+ при необходимости */
+.text-5 {
+	font-size: 30px;
+	background-color: rgb(150, 111, 63);
+	padding: 20px 0 0 0;
+	margin: 0 0 0 100px;
+	text-align: center;
+}
+/* Прижать объект слева */
+.text-6 {
+	font-size: 30px;
+	background-color: rgb(56, 167, 167);
+	max-width: 600px;
+	max-height: 400px;
+	overflow: auto;
+	margin: 0 auto 0 0;
+	text-align: center;
+}
+/* Прижать объект справа */
+.text-7 {
+	font-size: 30px;
+	background-color: rgb(190, 177, 64);
+	max-width: 600px;
+	max-height: 400px;
+	overflow: auto;
+	margin: 0 0 0 auto;
+	text-align: center;
+}
+/* Закрепить объект по центру */
+.text-8 {
+	font-size: 30px;
+	background-color: rgb(207, 51, 77);
+	max-width: 600px;
+	max-height: 400px;
+	margin:  0 auto;
+	text-align: center;
+}
+.image{
+	display: block;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+}
+.link{
+	font-size: 40px;
+	font-weight: 300;
+	color: red;
+}
+.name{
+	font-size: 50px;
+	color: blue;
+	display: block;
+	text-align: center;
+}
+span{
+	display: block;
+	font-size: 40px;
+	color: darkcyan;
+	margin: 20px 0 0 100px;
+}
+.text{
+	background-color: rgb(171, 126, 110);
+	font-size: 30px;
+	max-width: 200px;
+	max-height: 200px;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 15px;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+.link2{
+	font-size: 30px;
+	background-color: #e11919;
+	display: inline-block;
+	margin: 0px 0px 30px 0px;
+}
+.paragraf >p{
+	font-size: 20px;
+	display: inline-block;
+	max-width: 100px;
+	background-color: rgb(211, 183, 26);
+	text-align: center;
+	padding-right: 30px;
+	margin: 10px;
+	box-sizing: border-box;
+}
+.textone {
+	font-size: 30px;
+	background-color: rgb(206, 129, 73);
+	padding: 30px;
+	display: block;
+}
+.texttwo {
+	font-size: 30px;
+	background-color: rgb(207, 169, 123);
+	padding: 30px;
+	display: block;
+	margin: -30px 0 30px 0;
+}
+.scroll{
+	font-size: 30px;
+	color: black;
+	background-color: rgb(36, 223, 49);
+	max-height: 200px;
+	max-width: 400px;
+	overflow: auto;
+	margin: 0 0 50px 50px;
+	padding: 10px;
+}
